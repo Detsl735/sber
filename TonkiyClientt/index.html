@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Узнать остаток кредита</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Узнать остаток кредита</h1>
+
+    <form action="/cgi-bin/form.py" method="post">
+        <label for="contractNumber">Номер договора:</label>
+        <input type="text" id="deal_id" name="deal_id" required>
+
+        <label for="date">На дату:</label>
+        <input type="text" id="pay_date" name="pay_date" required>
+
+        <input type="submit" value="Рассчитать">
+    </form>
+
+</body>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кредитный калькулятор</title>
+</head>
+<body>
+    <form action="/cgi-bin/script.py" method="post">
+        <label for="deal_id">Номер договора:</label>
+        <input type="text" id="deal_id" name="deal_id" required><br>
+
+        <label for="pay_date">Дата:</label>
+        <input type="text" id="pay_date" name="pay_date" required><br>
+
+        <input type="submit" value="Рассчитать">
+    </form>
+</body>
+</html>-->
