@@ -21,6 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ClientInfo.py" />
+    <Compile Include="CreditPaymentsModule.py" />
+    <Compile Include="form.py" />
+    <Compile Include="RiskInfo.py" />
     <Compile Include="TonkiyClientt.py" />
   </ItemGroup>
   <ItemGroup>

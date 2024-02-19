@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from http.server import HTTPServer, CGIHTTPRequestHandler
 
 server_address=("", 8000)
